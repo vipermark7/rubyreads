@@ -7,6 +7,6 @@ List of features to work on:
 * ~Add CSS styles~ 
 * Validate that title and author fields can't be empty 
 * Pull images of book covers from somewhere, and display them when listing hte books we have and while editing books
-* AUto-populate summary using an API. Might be the same API taht fetches book cover images
+* Add option to auto-populate summary using an API? Might be the same API taht fetches book cover images
 
 
