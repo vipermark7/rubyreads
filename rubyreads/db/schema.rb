@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_05_21_202344) do
+ActiveRecord::Schema.define(version: 2022_05_21_205341) do
 
   create_table "books", force: :cascade do |t|
     t.string "title"
@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 2022_05_21_202344) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "comments", force: :cascade do |t|
+  create_table "reviews", force: :cascade do |t|
     t.string "user_name"
     t.text "body"
     t.integer "book_id"
