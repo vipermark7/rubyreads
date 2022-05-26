@@ -32,6 +32,16 @@
   </div>
 
   <div>
+    <%= form.label :review, style: "display: block" %>
+    <%= form.text_area :review %>
+  </div>
+
+  <div>
+    <%= form.label :book_id, style: "display: block" %>
+    <%= form.number_field :book_id %>
+  </div>
+
+  <div>
     <%= form.submit %>
   </div>
 <% end %>
