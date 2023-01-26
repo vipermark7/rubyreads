@@ -584,3 +584,713 @@ Processing by BooksController#show as HTML
 Completed 200 OK in 6ms (Views: 3.3ms | ActiveRecord: 0.1ms | Allocations: 3697)
 
 
+Started GET "/books" for ::1 at 2023-01-25 20:22:44 -0500
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:6
+  Rendered books/_book.html.erb (Duration: 0.9ms | Allocations: 217)
+  Rendered books/index.html.erb within layouts/application (Duration: 11.7ms | Allocations: 1590)
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 3954)
+Completed 200 OK in 23ms (Views: 20.8ms | ActiveRecord: 1.2ms | Allocations: 4696)
+
+
+Started GET "/books" for ::1 at 2023-01-25 20:22:48 -0500
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:6
+  Rendered books/_book.html.erb (Duration: 0.2ms | Allocations: 31)
+  Rendered books/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 895)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 3015)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.1ms | Allocations: 3284)
+
+
+Started GET "/books/1/edit" for ::1 at 2023-01-25 20:22:50 -0500
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:63:in `set_book'
+  Rendering layout layouts/application.html.erb
+  Rendering books/edit.html.erb within layouts/application
+  Rendered books/_form.html.erb (Duration: 6.2ms | Allocations: 1686)
+  Rendered books/edit.html.erb within layouts/application (Duration: 9.4ms | Allocations: 2020)
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 4117)
+Completed 200 OK in 29ms (Views: 14.6ms | ActiveRecord: 0.3ms | Allocations: 4959)
+
+
+Started GET "/books" for ::1 at 2023-01-25 20:22:56 -0500
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:6
+  Rendered books/_book.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered books/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 886)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 2991)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.2ms | Allocations: 3259)
+
+
+Started GET "/books" for ::1 at 2023-01-25 20:24:34 -0500
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:6
+  Rendered books/_book.html.erb (Duration: 0.4ms | Allocations: 217)
+  Rendered books/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1396)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 3760)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.1ms | Allocations: 4502)
+
+
+Started GET "/books/1" for ::1 at 2023-01-25 20:26:33 -0500
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:63:in `set_book'
+  Rendering layout layouts/application.html.erb
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/_book.html.erb (Duration: 0.5ms | Allocations: 217)
+  Rendered books/show.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1057)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 3408)
+Completed 200 OK in 9ms (Views: 6.6ms | ActiveRecord: 0.1ms | Allocations: 4627)
+
+
+Started GET "/books/1" for ::1 at 2023-01-25 20:29:17 -0500
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:63:in `set_book'
+  Rendering layout layouts/application.html.erb
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/_book.html.erb (Duration: 0.4ms | Allocations: 217)
+  Rendered books/show.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1138)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 3489)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.1ms | Allocations: 4706)
+
+
+Started GET "/reviews" for ::1 at 2023-01-25 20:29:19 -0500
+Processing by ReviewsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering reviews/index.html.erb within layouts/application
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/views/reviews/index.html.erb:6
+  Rendered reviews/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1077)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 3272)
+Completed 200 OK in 8ms (Views: 5.4ms | ActiveRecord: 0.2ms | Allocations: 4645)
+
+
+Started GET "/reviews/new" for ::1 at 2023-01-25 20:29:21 -0500
+Processing by ReviewsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_form.html.erb (Duration: 2.5ms | Allocations: 1765)
+  Rendered reviews/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2045)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 4150)
+Completed 200 OK in 12ms (Views: 6.8ms | ActiveRecord: 0.8ms | Allocations: 7511)
+
+
+Started GET "/reviews/new" for ::1 at 2023-01-25 20:31:37 -0500
+Processing by ReviewsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_form.html.erb (Duration: 1.8ms | Allocations: 1368)
+  Rendered reviews/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1658)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 4037)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 4760)
+
+
+Started POST "/reviews" for ::1 at 2023-01-25 20:32:12 -0500
+Processing by ReviewsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "review"=>{"user_name"=>"shaffan", "body"=>"Tihs book changed my life! :D"}, "commit"=>"Create Review"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/reviews_controller.rb:27:in `block in create'
+  [1m[36mReview Create (0.4ms)[0m  [1m[32mINSERT INTO "reviews" ("user_name", "body", "book_id", "created_at", "updated_at", "rating") VALUES (?, ?, ?, ?, ?, ?)[0m  [["user_name", "shaffan"], ["body", "Tihs book changed my life! :D"], ["book_id", nil], ["created_at", "2023-01-26 01:32:12.218857"], ["updated_at", "2023-01-26 01:32:12.218857"], ["rating", nil]]
+  ↳ app/controllers/reviews_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (7.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/reviews_controller.rb:27:in `block in create'
+Redirected to http://127.0.0.1:3000/reviews/1
+Completed 302 Found in 13ms (ActiveRecord: 7.5ms | Allocations: 2554)
+
+
+Started GET "/reviews/1" for ::1 at 2023-01-25 20:32:12 -0500
+Processing by ReviewsController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:63:in `set_review'
+  Rendering layout layouts/application.html.erb
+  Rendering reviews/show.html.erb within layouts/application
+  Rendered reviews/_review.html.erb (Duration: 0.5ms | Allocations: 192)
+  Rendered reviews/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1134)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 3242)
+Completed 200 OK in 7ms (Views: 4.3ms | ActiveRecord: 0.1ms | Allocations: 4734)
+
+
+Started GET "/reviews" for ::1 at 2023-01-25 20:32:15 -0500
+Processing by ReviewsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering reviews/index.html.erb within layouts/application
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/views/reviews/index.html.erb:6
+  Rendered reviews/_review.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered reviews/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1093)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 3198)
+Completed 200 OK in 9ms (Views: 6.2ms | ActiveRecord: 0.1ms | Allocations: 3546)
+
+
+Started GET "/reviews/new" for ::1 at 2023-01-25 20:32:36 -0500
+Processing by ReviewsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_form.html.erb (Duration: 2.0ms | Allocations: 1003)
+  Rendered reviews/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1092)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 3197)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 3469)
+
+
+Started GET "/books/1" for ::1 at 2023-01-25 20:32:38 -0500
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:63:in `set_book'
+  Rendering layout layouts/application.html.erb
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/_book.html.erb (Duration: 0.6ms | Allocations: 217)
+  Rendered books/show.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1113)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 3281)
+Completed 200 OK in 12ms (Views: 8.4ms | ActiveRecord: 0.2ms | Allocations: 4322)
+
+
+Started GET "/reviews" for ::1 at 2023-01-25 20:32:43 -0500
+Processing by ReviewsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering reviews/index.html.erb within layouts/application
+  [1m[36mReview Load (0.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/views/reviews/index.html.erb:6
+  Rendered reviews/_review.html.erb (Duration: 0.7ms | Allocations: 20)
+  Rendered reviews/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 890)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 2995)
+Completed 200 OK in 16ms (Views: 11.1ms | ActiveRecord: 0.8ms | Allocations: 3264)
+
+
+Started GET "/books" for ::1 at 2023-01-25 20:32:54 -0500
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:6
+  Rendered books/_book.html.erb (Duration: 0.3ms | Allocations: 31)
+  Rendered books/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1124)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 3229)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.2ms | Allocations: 3578)
+
+
+Started GET "/books/new" for ::1 at 2023-01-25 20:32:55 -0500
+Processing by BooksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (Duration: 1.9ms | Allocations: 1596)
+  Rendered books/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1871)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 3976)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 4306)
+
+
+Started POST "/books" for ::1 at 2023-01-25 20:33:32 -0500
+Processing by BooksController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "book"=>{"title"=>"The Well-Grounded Rubyist", "author"=>"David Black", "summary"=>"An awesome book to understand Ruby in depth"}, "commit"=>"Create Book"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:27:in `block in create'
+  [1m[36mBook Create (0.4ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "date", "summary", "review", "book_id", "created_at", "updated_at", "cover_photo_url") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "The Well-Grounded Rubyist"], ["author", "David Black"], ["date", nil], ["summary", "An awesome book to understand Ruby in depth"], ["review", nil], ["book_id", nil], ["created_at", "2023-01-26 01:33:32.998318"], ["updated_at", "2023-01-26 01:33:32.998318"], ["cover_photo_url", nil]]
+  ↳ app/controllers/books_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (6.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/books_controller.rb:27:in `block in create'
+Redirected to http://127.0.0.1:3000/books/3
+Completed 302 Found in 12ms (ActiveRecord: 7.2ms | Allocations: 2416)
+
+
+Started GET "/books/3" for ::1 at 2023-01-25 20:33:33 -0500
+Processing by BooksController#show as TURBO_STREAM
+  Parameters: {"id"=>"3"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:63:in `set_book'
+  Rendering layout layouts/application.html.erb
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/_book.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendered books/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 590)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 2687)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.1ms | Allocations: 3430)
+
+
+Started GET "/reviews" for ::1 at 2023-01-25 20:33:35 -0500
+Processing by ReviewsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering reviews/index.html.erb within layouts/application
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/views/reviews/index.html.erb:6
+  Rendered reviews/_review.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered reviews/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 884)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 2989)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.1ms | Allocations: 3257)
+
+
+Started GET "/reviews" for ::1 at 2023-01-25 20:33:42 -0500
+Processing by ReviewsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering reviews/index.html.erb within layouts/application
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/views/reviews/index.html.erb:6
+  Rendered reviews/_review.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered reviews/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 890)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 2995)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.1ms | Allocations: 3263)
+
+
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2023-01-25 21:25:36 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 604)
+  Rendered layout layouts/application.html.erb (Duration: 87.1ms | Allocations: 33930)
+Completed 200 OK in 92ms (Views: 88.8ms | ActiveRecord: 0.0ms | Allocations: 36822)
+
+
+Started GET "/books/new" for ::1 at 2023-01-25 21:25:39 -0500
+Processing by BooksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (Duration: 4.2ms | Allocations: 3237)
+  Rendered books/new.html.erb within layouts/application (Duration: 4.9ms | Allocations: 3559)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 5743)
+Completed 200 OK in 16ms (Views: 8.2ms | ActiveRecord: 0.4ms | Allocations: 13863)
+
+
+Started POST "/books" for ::1 at 2023-01-25 21:25:52 -0500
+Processing by BooksController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "book"=>{"title"=>"The Well-Grounded Rubyist", "author"=>"David Black", "summary"=>"awesome ruby book!"}, "commit"=>"Create Book"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:27:in `block in create'
+  [1m[36mBook Create (0.4ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "date", "summary", "review", "book_id", "created_at", "updated_at", "cover_photo_url") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "The Well-Grounded Rubyist"], ["author", "David Black"], ["date", nil], ["summary", "awesome ruby book!"], ["review", nil], ["book_id", nil], ["created_at", "2023-01-26 02:25:52.106742"], ["updated_at", "2023-01-26 02:25:52.106742"], ["cover_photo_url", nil]]
+  ↳ app/controllers/books_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (6.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/books_controller.rb:27:in `block in create'
+Redirected to http://127.0.0.1:3000/books/4
+Completed 302 Found in 12ms (ActiveRecord: 6.6ms | Allocations: 4330)
+
+
+Started GET "/books/4" for ::1 at 2023-01-25 21:25:52 -0500
+Processing by BooksController#show as TURBO_STREAM
+  Parameters: {"id"=>"4"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:63:in `set_book'
+  Rendering layout layouts/application.html.erb
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/_book.html.erb (Duration: 0.3ms | Allocations: 228)
+  Rendered books/show.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1287)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 3385)
+Completed 200 OK in 7ms (Views: 4.6ms | ActiveRecord: 0.2ms | Allocations: 6080)
+
+
+Started GET "/books/4/edit" for ::1 at 2023-01-25 21:25:59 -0500
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:63:in `set_book'
+  Rendering layout layouts/application.html.erb
+  Rendering books/edit.html.erb within layouts/application
+  Rendered books/_form.html.erb (Duration: 1.5ms | Allocations: 1332)
+  Rendered books/edit.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1605)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 3703)
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.2ms | Allocations: 4511)
+
+
+Started GET "/books" for ::1 at 2023-01-25 21:26:05 -0500
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:6
+  Rendered books/_book.html.erb (Duration: 0.3ms | Allocations: 42)
+  Rendered books/_book.html.erb (Duration: 0.2ms | Allocations: 22)
+  Rendered books/_book.html.erb (Duration: 0.1ms | Allocations: 22)
+  Rendered books/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1494)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 3600)
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 0.2ms | Allocations: 3958)
+
+
+Started GET "/books/4" for ::1 at 2023-01-25 21:26:12 -0500
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:63:in `set_book'
+  Rendering layout layouts/application.html.erb
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/_book.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendered books/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 552)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 2649)
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.1ms | Allocations: 3389)
+
+
+Started DELETE "/books/4" for ::1 at 2023-01-25 21:26:14 -0500
+Processing by BooksController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"4"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:63:in `set_book'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:52:in `destroy'
+  [1m[36mBook Destroy (0.3ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = ?[0m  [["id", 4]]
+  ↳ app/controllers/books_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (13.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/books_controller.rb:52:in `destroy'
+Redirected to http://127.0.0.1:3000/books
+Completed 302 Found in 20ms (ActiveRecord: 14.4ms | Allocations: 2512)
+
+
+Started GET "/books" for ::1 at 2023-01-25 21:26:14 -0500
+Processing by BooksController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:6
+  Rendered books/_book.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered books/_book.html.erb (Duration: 0.1ms | Allocations: 22)
+  Rendered books/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1063)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 3168)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.1ms | Allocations: 3439)
+
+
+Started GET "/books/new" for ::1 at 2023-01-25 21:26:28 -0500
+Processing by BooksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (Duration: 3.3ms | Allocations: 1208)
+  Rendered books/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1297)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 3402)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 3677)
+
+
+Started GET "/books" for ::1 at 2023-01-25 21:26:31 -0500
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:6
+  Rendered books/_book.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered books/_book.html.erb (Duration: 0.1ms | Allocations: 22)
+  Rendered books/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1055)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 3160)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.2ms | Allocations: 3428)
+
+
+Started GET "/books/1" for ::1 at 2023-01-25 21:26:33 -0500
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:63:in `set_book'
+  Rendering layout layouts/application.html.erb
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/_book.html.erb (Duration: 0.2ms | Allocations: 31)
+  Rendered books/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 575)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 2691)
+Completed 200 OK in 11ms (Views: 3.7ms | ActiveRecord: 0.2ms | Allocations: 3436)
+
+
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/books/1" for ::1 at 2023-01-25 21:28:13 -0500
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:63:in `set_book'
+  Rendering layout layouts/application.html.erb
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/_book.html.erb (Duration: 0.3ms | Allocations: 231)
+  Rendered books/show.html.erb within layouts/application (Duration: 9.6ms | Allocations: 2251)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 2339)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.8ms | Allocations: 7867)
+
+
+  
+ActionView::Template::Error (Missing partial books/_an amazing book!!!, application/_an amazing book!!! with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/spacey/rubyreads/app/views"
+  * "/home/spacey/.rvm/gems/ruby-3.2.0/gems/actiontext-7.0.4.1/app/views"
+  * "/home/spacey/.rvm/gems/ruby-3.2.0/gems/actionmailbox-7.0.4.1/app/views"
+):
+    1: <p style="color: green"><%= notice %></p>
+    2: 
+    3: <%= render @book %>
+    4: <%= render @book.review %>
+    5: <div>
+    6:   <%= link_to "Edit this book", edit_book_path(@book) %> |   
+    7:   <%= link_to "Back to books", books_path %> |
+  
+app/views/books/show.html.erb:4
+Started GET "/reviews" for ::1 at 2023-01-25 21:31:28 -0500
+Processing by ReviewsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering reviews/index.html.erb within layouts/application
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/views/reviews/index.html.erb:6
+  Rendered reviews/_review.html.erb (Duration: 0.4ms | Allocations: 203)
+  Rendered reviews/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 4593)
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 17561)
+Completed 200 OK in 18ms (Views: 12.9ms | ActiveRecord: 0.5ms | Allocations: 20040)
+
+
+Started GET "/books/3" for ::1 at 2023-01-25 21:31:33 -0500
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:63:in `set_book'
+  Rendering layout layouts/application.html.erb
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1200)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 1289)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.1ms | Allocations: 2306)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <p style="color: green"><%= notice %></p>
+
+<%= render @book %>
+<%= 
+  @book.reviews.each do |r|
+    <p> r.name </p>
+    <p> r.date_updated </p>
+
+  end 
+%>
+<div>
+  <%= link_to "Edit this book", edit_book_path(@book) %> |   
+  <%= link_to "Back to books", books_path %> |
+  <%= button_to "Destroy this book", @book, method: :delete %>
+</div>
+
+):
+1:    <p style="color: green"><%= notice %></p>
+2:    
+3:    <%= render @book %>
+4:    <%= 
+5:      @book.reviews.each do |r|
+6:        <p> r.name </p>
+7:        <p> r.date_updated </p>
+8:    
+9:      end 
+10:    %>
+11:    <div>
+12:      <%= link_to "Edit this book", edit_book_path(@book) %> |   
+13:      <%= link_to "Back to books", books_path %> |
+14:      <%= button_to "Destroy this book", @book, method: :delete %>
+15:    </div>
+  
+app/views/books/show.html.erb:6: syntax error, unexpected '<'
+app/views/books/show.html.erb:7: unknown regexp option - p
+app/views/books/show.html.erb:6: syntax error, unexpected '<'
+app/views/books/show.html.erb:7: unknown regexp option - p
+app/views/books/show.html.erb:6: syntax error, unexpected '<'
+app/views/books/show.html.erb:7: unknown regexp option - p
+app/views/books/show.html.erb:6: syntax error, unexpected '<'
+app/views/books/show.html.erb:7: unknown regexp option - p
+app/views/books/show.html.erb:6: syntax error, unexpected '<'
+app/views/books/show.html.erb:7: unknown regexp option - p
+app/views/books/show.html.erb:6: syntax error, unexpected '<'
+app/views/books/show.html.erb:7: unknown regexp option - p
+Started GET "/books/new" for ::1 at 2023-01-25 21:31:33 -0500
+Processing by BooksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (Duration: 3.5ms | Allocations: 1658)
+  Rendered books/new.html.erb within layouts/application (Duration: 7.2ms | Allocations: 1948)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 4145)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms | Allocations: 4498)
+
+
+Started GET "/books/new" for ::1 at 2023-01-25 21:31:34 -0500
+Processing by BooksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (Duration: 1.6ms | Allocations: 1220)
+  Rendered books/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1309)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 3414)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 3687)
+
+
+Started GET "/books" for ::1 at 2023-01-25 21:31:37 -0500
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:6
+  Rendered books/_book.html.erb (Duration: 0.5ms | Allocations: 214)
+  Rendered books/_book.html.erb (Duration: 0.1ms | Allocations: 22)
+  Rendered books/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1600)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 3705)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.2ms | Allocations: 4056)
+
+
+Started GET "/books/1" for ::1 at 2023-01-25 21:31:40 -0500
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:63:in `set_book'
+  Rendering layout layouts/application.html.erb
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 1174)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 1262)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms | Allocations: 1979)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <p style="color: green"><%= notice %></p>
+
+<%= render @book %>
+<%= 
+  @book.reviews.each do |r|
+    <p> r.name </p>
+    <p> r.date_updated </p>
+
+  end 
+%>
+<div>
+  <%= link_to "Edit this book", edit_book_path(@book) %> |   
+  <%= link_to "Back to books", books_path %> |
+  <%= button_to "Destroy this book", @book, method: :delete %>
+</div>
+
+):
+1:    <p style="color: green"><%= notice %></p>
+2:    
+3:    <%= render @book %>
+4:    <%= 
+5:      @book.reviews.each do |r|
+6:        <p> r.name </p>
+7:        <p> r.date_updated </p>
+8:    
+9:      end 
+10:    %>
+11:    <div>
+12:      <%= link_to "Edit this book", edit_book_path(@book) %> |   
+13:      <%= link_to "Back to books", books_path %> |
+14:      <%= button_to "Destroy this book", @book, method: :delete %>
+15:    </div>
+  
+app/views/books/show.html.erb:6: syntax error, unexpected '<'
+app/views/books/show.html.erb:7: unknown regexp option - p
+app/views/books/show.html.erb:6: syntax error, unexpected '<'
+app/views/books/show.html.erb:7: unknown regexp option - p
+app/views/books/show.html.erb:6: syntax error, unexpected '<'
+app/views/books/show.html.erb:7: unknown regexp option - p
+app/views/books/show.html.erb:6: syntax error, unexpected '<'
+app/views/books/show.html.erb:7: unknown regexp option - p
+app/views/books/show.html.erb:6: syntax error, unexpected '<'
+app/views/books/show.html.erb:7: unknown regexp option - p
+app/views/books/show.html.erb:6: syntax error, unexpected '<'
+app/views/books/show.html.erb:7: unknown regexp option - p
+Started GET "/books/1" for ::1 at 2023-01-25 21:36:36 -0500
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:63:in `set_book'
+  Rendering layout layouts/application.html.erb
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/_book.html.erb (Duration: 0.5ms | Allocations: 217)
+  Rendered books/show.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1718)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 1806)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms | Allocations: 3000)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `r' for #<ActionView::Base:0x00000000011300>):
+    2: 
+    3: <%= render @book %>
+    4: @book.reviews.each do |r|
+    5:   <p><%=r.username %></p>
+    6:   <p><%=r.date_updated %></p>
+    7: end
+    8: <div>
+  
+app/views/books/show.html.erb:5
+Started GET "/books/1" for ::1 at 2023-01-25 21:37:32 -0500
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:63:in `set_book'
+  Rendering layout layouts/application.html.erb
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/_book.html.erb (Duration: 0.3ms | Allocations: 217)
+  Rendered books/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1706)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | Allocations: 1794)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.1ms | Allocations: 2987)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `r' for #<ActionView::Base:0x00000000011670>):
+    2: 
+    3: <%= render @book %>
+    4: @books.reviews.each do |r|
+    5:   <p><%=r.username %></p>
+    6:   <p><%=r.date_updated %></p>
+    7: end
+    8: <div>
+  
+app/views/books/show.html.erb:5
+Started GET "/books/1" for ::1 at 2023-01-25 21:42:08 -0500
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:63:in `set_book'
+  Rendering layout layouts/application.html.erb
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/_book.html.erb (Duration: 0.4ms | Allocations: 217)
+  Rendered books/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1710)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | Allocations: 1798)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms | Allocations: 2991)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `r' for #<ActionView::Base:0x000000000119e0>):
+    3: <%= render @book %>
+    4: <div>
+    5:   @books.reviews.each do |r|
+    6:     <p><%=r.username %></p>
+    7:     <p><%=r.date_updated %></p>
+    8:   end
+    9: </div>
+  
+app/views/books/show.html.erb:6
+Started GET "/books/1" for ::1 at 2023-01-25 21:48:33 -0500
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:63:in `set_book'
+  Rendering layout layouts/application.html.erb
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/_book.html.erb (Duration: 0.4ms | Allocations: 217)
+  Rendered books/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1708)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 1796)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.5ms | Allocations: 3150)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `r' for #<ActionView::Base:0x00000000011d78>):
+    3: <%= render @book %>
+    4: <div>
+    5:   @reviews.filter(@review.book_id == @book.id).each do |r|
+    6:     <p><%=r.username %></p>
+    7:     <p><%=r.date_updated %></p>
+    8:   end
+    9: </div>
+  
+app/views/books/show.html.erb:6
+Started PUT "/__web_console/repl_sessions/f13e6a53e1f19a6a697d9079dcbc51a2" for ::1 at 2023-01-25 21:48:45 -0500
+Started PUT "/__web_console/repl_sessions/f13e6a53e1f19a6a697d9079dcbc51a2" for ::1 at 2023-01-25 21:48:45 -0500
+Started PUT "/__web_console/repl_sessions/f13e6a53e1f19a6a697d9079dcbc51a2" for ::1 at 2023-01-25 21:49:00 -0500
+Started PUT "/__web_console/repl_sessions/f13e6a53e1f19a6a697d9079dcbc51a2" for ::1 at 2023-01-25 21:49:00 -0500
