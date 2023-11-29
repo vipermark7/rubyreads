@@ -17,13 +17,13 @@ jobs:
 
       - name: Run linters
         run: |
-          bin/rubocop --parallel
-          bin/stylelint
+          rubocop --parallel
+          stylelint
 
       - name: Run security checks
         run: |
-          bin/bundler-audit --update
-          bin/brakeman -q -w2
+          bundler-audit --update
+          brakeman -q -w2
 
   tests:
     name: Tests
