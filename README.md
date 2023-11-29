@@ -1,24 +1,5 @@
-# README
+This application is a simple book review site, used as a way to get familiar with working on a Rails app. It probably won't be much more than a simple site to create, view, update, and delete books and reviews for them. I'm hoping to be able to add comments to book reviews as well
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The usual `gem install rails` and then `bundle install` from inside the rubyreads folder should be sufficient to install the needed dependencies
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Use `rails s` to run the app on the Puma server locally, and `rails console` to open a console that will let you interact with the app via Ruby commands
