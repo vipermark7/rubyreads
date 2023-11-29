@@ -8,6 +8,7 @@ Use `rails s` to run the app on the Puma server locally, and `rails console` to 
 WIP features: 
 * ~~Add validator for reviews: body must not be empty~~
 * ~Add a navbar on every page so a user can easily return to the list of all available books~
+* Fix navbar not taking users to correct places
 * Make it so that the "Back to reviews" link takes the reviews for that book
 * Clean up view for show_review.html
 * Add user authentication
