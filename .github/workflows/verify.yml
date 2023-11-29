@@ -13,23 +13,12 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
-
-      - name: Setup Node
-        uses: actions/setup-node@v2
-        with:
-          node-version: 16
-          cache: yarn
-
-      - name: Install packages
-        run: |
-          yarn install --pure-lockfile
+          ruby-version: 3.2.2
 
       - name: Run linters
         run: |
           bin/rubocop --parallel
           bin/stylelint
-          bin/prettier
-          bin/eslint
 
       - name: Run security checks
         run: |
@@ -56,16 +45,6 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
-
-      - name: Setup Node
-        uses: actions/setup-node@v2
-        with:
-          node-version: 16
-          cache: yarn
-
-      - name: Install packages
-        run: |
-          yarn install --pure-lockfile
 
       - name: Setup test database
         env:
