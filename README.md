@@ -7,6 +7,8 @@ Use `rails s` to run the app on the Puma server locally, and `rails console` to 
 
 WIP features: 
 * ~~Add validator for reviews: body must not be empty~~
+* Index page should have and "Edit this book" link under each entry
+* Unsquash migrations?
 * ~Add a navbar on every page so a user can easily return to the list of all available books~
 * Ensure that certain fields like rating (out of five stars) is present when creating or editing a book
 * Add busines logic to attempt to fetch a cover for our books automatically, or use a placeholder image
