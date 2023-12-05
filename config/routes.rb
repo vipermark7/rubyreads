@@ -3,6 +3,10 @@ Rails.application.routes.draw do
   get 'home/index'
   resources :reviews
   root to: 'home#index'
+
+  resources :books do
+    resources :reviews 
+  end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   get '/books', to: 'books#index'
 

@@ -10,35 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_01_26_222406) do
+ActiveRecord::Schema[7.0].define(version: 2023_12_03_023307) do
   create_table "books", force: :cascade do |t|
     t.string "title"
     t.string "author"
     t.date "date"
-    t.text "summary"
-    t.text "review"
-    t.integer "book_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "cover_photo_url"
-  end
-
-  create_table "comments", force: :cascade do |t|
-    t.string "username"
-    t.text "body"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.integer "review_id"
-    t.index ["review_id"], name: "index_comments_on_review_id"
+    t.decimal "average_rating"
   end
 
   create_table "reviews", force: :cascade do |t|
-    t.string "user_name"
     t.text "body"
-    t.integer "book_id"
+    t.integer "book_id", null: false
+    t.decimal "rating"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.decimal "rating"
+    t.index ["book_id"], name: "index_reviews_on_book_id"
   end
 
+  add_foreign_key "reviews", "books"
 end

@@ -16,7 +16,7 @@ class ReviewsTest < ApplicationSystemTestCase
 
     fill_in "Body", with: @review.body
     fill_in "Book", with: @review.book_id
-    fill_in "User name", with: @review.user_name
+    fill_in "Rating", with: @review.rating
     click_on "Create Review"
 
     assert_text "Review was successfully created"
@@ -29,7 +29,7 @@ class ReviewsTest < ApplicationSystemTestCase
 
     fill_in "Body", with: @review.body
     fill_in "Book", with: @review.book_id
-    fill_in "User name", with: @review.user_name
+    fill_in "Rating", with: @review.rating
     click_on "Update Review"
 
     assert_text "Review was successfully updated"
