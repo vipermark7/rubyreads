@@ -4,6 +4,39 @@
 <div>
   <%= link_to "Edit this book", edit_book_path(@book) %> |
   <%= link_to "Back to books", books_path %>
-
+  <br></br>
   <%= button_to "Destroy this book", @book, method: :delete %>
+  <br></br>
+  <h2>Reviews</h2>
+<% @book.reviews
+.each do |r| %>
+  <p>
+    <strong>Name:</strong>
+    <%= review.username %>
+  </p>
+
+  <p>
+    <strong>Review:</strong>
+    <%= review.text %>
+  </p>
+<% end %>
+
+<strong>Add a review:</strong>
+<%= form_with model: [ @book, @book.reviews.build ] do |form| %>
+  <p>
+    <%= form.label :username %><br>
+    <%= form.text_field :username %>
+  </p>
+  <p>
+    <%= form.label :body %><br>
+    <%= form.text_area :body %>
+  </p>
+    <p>
+    <%= form.label :rating %><br>
+    <%= form.text_field :rating %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
 </div>
