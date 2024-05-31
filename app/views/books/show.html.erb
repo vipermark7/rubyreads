@@ -8,16 +8,15 @@
   <%= button_to "Destroy this book", @book, method: :delete %>
   <br></br>
   <h2>Reviews</h2>
-<% @book.reviews
-.each do |r| %>
+<% @book.reviews.each do |r| %>
   <p>
     <strong>Name:</strong>
-    <%= review.username %>
+    <%= r.username %>
   </p>
 
   <p>
     <strong>Review:</strong>
-    <%= review.text %>
+    <%= r.text %>
   </p>
 <% end %>
 
