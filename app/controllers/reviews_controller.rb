@@ -1,3 +1,4 @@
+require 'pry'
 class ReviewsController < ApplicationController
   before_action :set_review, only: %i[ show edit update destroy ]
 
@@ -21,11 +22,13 @@ class ReviewsController < ApplicationController
 
   # POST /reviews or /reviews.json
   def create
-    @review = Review.new(review_params)
+    @book = Book.find(params[:book_id])
+    @review = @book.reviews.create(review_params)
+    pp @review
 
     respond_to do |format|
       if @review.save
-        format.html { redirect_to review_url(@review), notice: "Review was successfully created." }
+        format.html { redirect_to book_url(@book), notice: "Review was successfully created." }
         format.json { render :show, status: :created, location: @review }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -65,6 +68,6 @@ class ReviewsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def review_params
-      params.require(:review).permit(:body, :book_id, :username)
+      params.require(:review).permit(:body, :book_id, :username, :rating)
     end
 end

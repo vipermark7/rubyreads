@@ -4,23 +4,29 @@
 <div>
   <%= link_to "Edit this book", edit_book_path(@book) %> |
   <%= link_to "Back to books", books_path %>
+
   <br></br>
   <%= button_to "Destroy this book", @book, method: :delete %>
+
   <br></br>
   <h2>Reviews</h2>
+
+  <% if @book.reviews.empty? %>
+  <p> No reviews yet </p> 
+  <% end %>
+
 <% @book.reviews.each do |r| %>
   <p>
     <strong>Name:</strong>
     <%= r.username %>
   </p>
-
   <p>
     <strong>Review:</strong>
-    <%= r.text %>
+    <%= r.body %>
   </p>
 <% end %>
 
-<strong>Add a review:</strong>
+<h2>Add a review:</h2>
 <%= form_with model: [ @book, @book.reviews.build ] do |form| %>
   <p>
     <%= form.label :username %><br>
@@ -32,10 +38,9 @@
   </p>
     <p>
     <%= form.label :rating %><br>
-    <%= form.text_field :rating %>
+    <%= form.number_field :rating %>
   </p>
   <p>
     <%= form.submit %>
   </p>
 <% end %>
-</div>
