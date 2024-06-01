@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -10,35 +12,35 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_06_01_032008) do
-  create_table "books", force: :cascade do |t|
-    t.string "title"
-    t.string "author"
-    t.date "date"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string "cover_photo_url"
-    t.decimal "average_rating"
-    t.text "summary"
+ActiveRecord::Schema[7.0].define(version: 20_240_601_032_008) do
+  create_table 'books', force: :cascade do |t|
+    t.string 'title'
+    t.string 'author'
+    t.date 'date'
+    t.datetime 'created_at', null: false
+    t.datetime 'updated_at', null: false
+    t.string 'cover_photo_url'
+    t.decimal 'average_rating'
+    t.text 'summary'
   end
 
-  create_table "comments", force: :cascade do |t|
-    t.string "commenter"
-    t.text "body"
-    t.integer "review_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+  create_table 'comments', force: :cascade do |t|
+    t.string 'commenter'
+    t.text 'body'
+    t.integer 'review_id'
+    t.datetime 'created_at', null: false
+    t.datetime 'updated_at', null: false
   end
 
-  create_table "reviews", force: :cascade do |t|
-    t.text "body"
-    t.integer "book_id", null: false
-    t.decimal "rating"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string "username"
-    t.index ["book_id"], name: "index_reviews_on_book_id"
+  create_table 'reviews', force: :cascade do |t|
+    t.text 'body'
+    t.integer 'book_id', null: false
+    t.decimal 'rating'
+    t.datetime 'created_at', null: false
+    t.datetime 'updated_at', null: false
+    t.string 'username'
+    t.index ['book_id'], name: 'index_reviews_on_book_id'
   end
 
-  add_foreign_key "reviews", "books"
+  add_foreign_key 'reviews', 'books'
 end

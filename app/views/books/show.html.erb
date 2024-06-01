@@ -5,42 +5,71 @@
   <%= link_to "Edit this book", edit_book_path(@book) %> |
   <%= link_to "Back to books", books_path %>
 
-  <br></br>
+  <br/>
   <%= button_to "Destroy this book", @book, method: :delete %>
 
-  <br></br>
+  <br/>
   <h2>Reviews</h2>
 
   <% if @book.reviews.empty? %>
-  <p> No reviews yet </p> 
+    <p> No reviews yet </p>
   <% end %>
 
-<% @book.reviews.each do |r| %>
-  <p>
-    <strong>Name:</strong>
-    <%= r.username %>
-  </p>
-  <p>
-    <strong>Review:</strong>
-    <%= r.body %>
-  </p>
-<% end %>
-
-<h2>Add a review:</h2>
-<%= form_with model: [ @book, @book.reviews.build ] do |form| %>
-  <p>
-    <%= form.label :username %><br>
-    <%= form.text_field :username %>
-  </p>
-  <p>
-    <%= form.label :body %><br>
-    <%= form.text_area :body %>
-  </p>
+  <% @book.reviews.each do |r| %>
     <p>
-    <%= form.label :rating %><br>
-    <%= form.number_field :rating %>
-  </p>
-  <p>
-    <%= form.submit %>
-  </p>
-<% end %>
+      <strong>Name:</strong>
+      <%= r.username %>
+    </p>
+    <p>
+      <strong>Review:</strong>
+      <%= r.body %>
+    </p>
+
+    <% if r.comments.empty? %>
+      <p> No comments yet </p>
+    <% end %>
+
+    <% r.comments.each do |c| %>
+      <strong> <%= c.commenter %> says: </strong>
+      <p> <% c.comment %> </p>
+    <% end %>
+
+    <h2>Add a comment:</h2>
+    <%= form_with model: [@review, r.comments.build] do |form| %>
+      <p>
+        <%= form.label :commenter %><br>
+        <%= form.text_field :commenter %>
+      </p>
+      <p>
+        <%= form.label :comment %><br>
+        <%= form.text_area :comment %>
+      </p>
+      <p>
+        <%= form.submit %>
+      </p>
+    <% end %>
+  <% end %>
+
+  <% if @book.reviews.empty? %>
+    <p> No reviews yet </p>
+  <% end %>
+
+  <h2>Add a review:</h2>
+  <%= form_with model: [@book, @book.reviews.build] do |form| %>
+    <p>
+      <%= form.label :username %><br>
+      <%= form.text_field :username %>
+    </p>
+    <p>
+      <%= form.label :body %><br>
+      <%= form.text_area :body %>
+    </p>
+    <p>
+      <%= form.label :rating %><br>
+      <%= form.number_field :rating %>
+    </p>
+    <p>
+      <%= form.submit %>
+    </p>
+  <% end %>
+</div>

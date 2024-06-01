@@ -14,9 +14,9 @@
     <tr>
       <td><%= comment.commenter %></td>
       <td><%= comment.comment %></td>
-      <td><%= link_to 'Show', [ @review, comment ] %></td>
+      <td><%= link_to 'Show', [@review, comment] %></td>
       <td><%= link_to 'Edit', edit_review_comment_path(@review, comment) %></td>
-      <td><%= link_to 'Destroy', [ @review, comment ], method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      <td><%= link_to 'Destroy', [@review, comment], method: :delete, data: { confirm: 'Are you sure?' } %></td>
     </tr>
   <% end %>
   </tbody>
