@@ -6,10 +6,16 @@ class CommentsController < ApplicationController
   end
 
   def show
+
   end
 
   def new
-    @comment = @review.comments.new
+    @comment = @review.comments.new(comment_params)
+    if @comment.save
+      redirect_to @review, notice: 'Comment was successfully created.'
+    else
+      render 'reviews/show'
+    end
   end
 
   def edit

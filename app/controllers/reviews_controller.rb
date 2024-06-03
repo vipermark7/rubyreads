@@ -3,18 +3,9 @@ require 'pry'
 class ReviewsController < ApplicationController
   before_action :set_review, only: %i[ show edit update destroy ]
 
-  # GET /reviews or /reviews.json
-  def index
-    @reviews = Review.all
-  end
-
   # GET /reviews/1 or /reviews/1.json
   def show
-  end
-
-  # GET /reviews/new
-  def new
-    @review = Review.new
+    @review = Review.find(params[:id])
   end
 
   # GET /reviews/1/edit

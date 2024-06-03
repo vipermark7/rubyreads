@@ -35,20 +35,8 @@
     <% end %>
 
     <h2>Add a comment:</h2>
-    <%= form_with model: [@review, r.comments.build] do |form| %>
-      <p>
-        <%= form.label :commenter %><br>
-        <%= form.text_field :commenter %>
-      </p>
-      <p>
-        <%= form.label :comment %><br>
-        <%= form.text_area :comment %>
-      </p>
-      <p>
-        <%= form.submit %>
-      </p>
-    <% end %>
-  <% end %>
+    <%= render 'comments/form', review: @review, comment: Comment.new %>
+<% end %>
 
   <% if @book.reviews.empty? %>
     <p> No reviews yet </p>
