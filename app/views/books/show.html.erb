@@ -35,7 +35,13 @@
     <% end %>
 
     <h2>Add a comment:</h2>
-    <%= render 'comments/form', review: @review, comment: Comment.new %>
+    <%= form_with model: @comment do |form| %>
+      <p>Username:</p>
+      <%= form.text_field :commenter %>
+      <p>Comment:</p>
+      <%= form.text_area :comment %>
+      <%= form.submit %>
+<% end %>
 <% end %>
 
   <% if @book.reviews.empty? %>
@@ -43,7 +49,7 @@
   <% end %>
 
   <h2>Add a review:</h2>
-  <%= form_with model: [@book, @book.reviews.build] do |form| %>
+  <%= form_with model: @comment do |form| %>
     <p>
       <%= form.label :username %><br>
       <%= form.text_field :username %>
