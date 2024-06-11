@@ -1,6 +1,7 @@
+
 Rails.application.routes.draw do
-  get 'comments/new'
-  get 'comments/create'
+  # get 'comments/new'
+  # get 'comments/create'
   resources :books
   get 'home/index'
   resources :reviews
@@ -8,14 +9,13 @@ Rails.application.routes.draw do
 
   resources :books do
     resources :reviews do
-      resources :comments
+      resources :comments , only: [:new, :create]
     end
   end
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-  get '/books', to: 'books#index'
-
-  get '/books/:id', to: 'books#show'
-
-  get '/', action: :index, controller: 'books'
-
+  # # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  # get '/books', to: 'books#index'
+  #
+  # get '/books/:id', to: 'books#show'
+  #
+  # get '/', action: :index, controller: 'books'
 end

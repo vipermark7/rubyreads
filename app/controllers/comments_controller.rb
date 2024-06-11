@@ -1,33 +1,29 @@
+# frozen_string_literal: true
+
 class CommentsController < ApplicationController
-  before_action :set_comment, only: [:show, :edit, :update, :destroy]
+  before_action :set_review
 
   def index
     @comments = @review.comments
   end
 
-  def show
-
-  end
+  def show; end
 
   def new
-    @comment = @review.comments.new(comment_params)
-    if @comment.save
-      redirect_to @review, notice: 'Comment was successfully created.'
-    else
-      render 'reviews/show'
-    end
+    @comment = Comment.new
   end
 
-  def edit
-  end
+  def edit; end
 
   def create
-    @comment = @review.comments.new(comment_params)
+    @book = Book.find(params[:book_id])
+    @review = @book.reviews.find(params[:review_id])
+    @comment = @review.comments.build(comment_params)
 
     if @comment.save
-      redirect_to review_comments_path(@review), notice: 'Comment was successfully created.'
+      redirect_to @book, notice: 'Comment was successfully created.'
     else
-      render :new
+      render 'books/show'
     end
   end
 
@@ -55,6 +51,6 @@ class CommentsController < ApplicationController
   end
 
   def comment_params
-    params.require(:comment).permit(:commenter, :comment)
+    params.require(:comment).permit(:commenter, :body)
   end
 end

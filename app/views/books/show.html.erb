@@ -30,16 +30,17 @@
     <% end %>
 
     <% r.comments.each do |c| %>
-      <strong> <%= c.commenter %> says: </strong>
-      <p> <% c.comment %> </p>
+      <strong> <%= c.commenter %> says: <%= c.body %></strong>
+      <br/>
+
     <% end %>
 
     <h2>Add a comment:</h2>
-    <%= form_with model: @comment do |form| %>
+    <%= form_with model: [@book, r, Comment.new] do |form| %>
       <p>Username:</p>
       <%= form.text_field :commenter %>
       <p>Comment:</p>
-      <%= form.text_area :comment %>
+      <%= form.text_area :body %>
       <%= form.submit %>
 <% end %>
 <% end %>

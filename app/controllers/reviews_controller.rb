@@ -5,7 +5,12 @@ class ReviewsController < ApplicationController
 
   # GET /reviews/1 or /reviews/1.json
   def show
-    @review = Review.find(params[:id])
+    @book = Book.find(params[:book_id])
+    @review = @book.reviews.find(params[:id])
+    @comment = @review.comments.build
+    pp @book
+    pp @review
+    pp @comment
   end
 
   # GET /reviews/1/edit
