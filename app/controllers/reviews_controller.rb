@@ -1,19 +1,16 @@
 require 'pry'
+
 class ReviewsController < ApplicationController
   before_action :set_review, only: %i[ show edit update destroy ]
 
-  # GET /reviews or /reviews.json
-  def index
-    @reviews = Review.all
-  end
-
   # GET /reviews/1 or /reviews/1.json
   def show
-  end
-
-  # GET /reviews/new
-  def new
-    @review = Review.new
+    @book = Book.find(params[:book_id])
+    @review = @book.reviews.find(params[:id])
+    @comment = @review.comments.build
+    pp @book
+    pp @review
+    pp @comment
   end
 
   # GET /reviews/1/edit
@@ -61,13 +58,14 @@ class ReviewsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_review
-      @review = Review.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def review_params
-      params.require(:review).permit(:body, :book_id, :username, :rating)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_review
+    @review = Review.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def review_params
+    params.require(:review).permit(:body, :book_id, :username, :rating)
+  end
 end

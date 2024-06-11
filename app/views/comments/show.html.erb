@@ -1,0 +1,12 @@
+<p>
+  <strong>Commenter:</strong>
+  <%= @comment.commenter %>
+</p>
+
+<p>
+  <strong>Comment:</strong>
+  <%= @comment.comment %>
+</p>
+
+<%= link_to 'Edit', edit_review_comment_path(@review, @comment) %> |
+<%= link_to 'Back', review_comments_path(@review) %>
