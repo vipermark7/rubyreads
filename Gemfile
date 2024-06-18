@@ -27,9 +27,9 @@ gem 'stimulus-rails'
 gem 'jbuilder'
 
 # Stuff for Ruby 3.4
-gem 'base64'
-gem 'bigdecimal'
-gem 'mutex_m'
+# gem 'base64'
+# gem 'bigdecimal'
+# gem 'mutex_m'
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
@@ -46,6 +46,9 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', require: false
 
+# devise for authenticatoin/auth
+gem 'devise'
+
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
@@ -58,7 +61,6 @@ end
 
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
-  gem 'rubocop'
   gem 'sqlite3', '~> 1.3', '>= 1.3.6'
   gem 'web-console'
 
