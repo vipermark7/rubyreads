@@ -10,10 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4655b10e-ee27-4a91-86a0-a796bb50287b" name="Changes" comment="commit misc files">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Uncommitted_changes_before_Checkout_at_6_18_2024_1_58_AM_[Changes].patch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/rubyreads.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rubyreads.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +78,7 @@
     "Rake.test: rubyreads.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Test::Unit/Shoulda/Minitest.BooksControllerTest.executor": "Run",
-    "git-widget-placeholder": "Rebasing comments",
+    "git-widget-placeholder": "devise-auth",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/shaff/.rvm/bin/rvm",
     "node.js.detected.package.eslint": "true",
