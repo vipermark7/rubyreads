@@ -17,4 +17,4 @@ WIP features:
 * Fix navbar not taking users to correct places
 * Make it so that the "Back to reviews" link takes the reviews for that book
 * Clean up view for show_review.html
-* Add user authentication?
+* ~Add user authentication?~
