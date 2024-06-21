@@ -9,7 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4655b10e-ee27-4a91-86a0-a796bb50287b" name="Changes" comment="add basic validators" />
+    <list default="true" id="4655b10e-ee27-4a91-86a0-a796bb50287b" name="Changes" comment="yeet .idea directory">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/rubyreads.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rubyreads.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -492,7 +496,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718980152353</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="yeet .idea directory">
+      <option name="closed" value="true" />
+      <created>1718980845110</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1718980845110</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -511,7 +523,8 @@
     <MESSAGE value="completed basic devise setup" />
     <MESSAGE value="fixed an error where deleting book wouldn't delete reviews" />
     <MESSAGE value="add basic validators" />
-    <option name="LAST_COMMIT_MESSAGE" value="add basic validators" />
+    <MESSAGE value="yeet .idea directory" />
+    <option name="LAST_COMMIT_MESSAGE" value="yeet .idea directory" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/rubyreads@spec__rubyreads.rcov" NAME="spec: rubyreads Coverage Results" MODIFIED="1717205692378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="rubyreads" />
