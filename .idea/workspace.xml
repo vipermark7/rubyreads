@@ -9,7 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4655b10e-ee27-4a91-86a0-a796bb50287b" name="Changes" comment="fixed an error where deleting book wouldn't delete reviews" />
+    <list default="true" id="4655b10e-ee27-4a91-86a0-a796bb50287b" name="Changes" comment="add basic validators" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,7 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="devise-auth" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -78,7 +78,7 @@
     "Rake.test: rubyreads.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Test::Unit/Shoulda/Minitest.BooksControllerTest.executor": "Run",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "validators",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/shaff/.rvm/bin/rvm",
     "node.js.detected.package.eslint": "true",
@@ -484,7 +484,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718977581041</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="add basic validators">
+      <option name="closed" value="true" />
+      <created>1718980152353</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1718980152353</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -502,7 +510,8 @@
     <MESSAGE value="fix syntax errors" />
     <MESSAGE value="completed basic devise setup" />
     <MESSAGE value="fixed an error where deleting book wouldn't delete reviews" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed an error where deleting book wouldn't delete reviews" />
+    <MESSAGE value="add basic validators" />
+    <option name="LAST_COMMIT_MESSAGE" value="add basic validators" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/rubyreads@spec__rubyreads.rcov" NAME="spec: rubyreads Coverage Results" MODIFIED="1717205692378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="rubyreads" />
