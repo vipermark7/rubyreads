@@ -16,9 +16,7 @@
   <a href="#news">News</a>
   <a href="#contact">Contact</a>
   <a href="#about">About</a>
-  <!-- notices for devise authentication/authorization gem -->
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
+  <p> Logged in as: <%= current_user.email %></p>
 </div>
 <%= yield %>
 </body>
