@@ -1,9 +1,9 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  username: MyString
-  body: MyText
+  commenter: andy1
+  body: hello
 
 two:
-  username: MyString
-  body: MyText
+  commenter: andy2
+  body: this book wsa very nie

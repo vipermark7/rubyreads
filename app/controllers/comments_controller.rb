@@ -19,6 +19,7 @@ class CommentsController < ApplicationController
     @book = Book.find(params[:book_id])
     @review = @book.reviews.find(params[:review_id])
     @comment = @review.comments.build(comment_params)
+    @comment.commenter = current_user
 
     if @comment.save
       redirect_to @book, notice: 'Comment was successfully created.'
