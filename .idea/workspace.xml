@@ -9,8 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4655b10e-ee27-4a91-86a0-a796bb50287b" name="Changes" comment="remove old patch file">
-      <change beforePath="$PROJECT_DIR$/Uncommitted_changes_before_Checkout_at_6_18_2024_1_58_AM_[Changes].patch" beforeDir="false" />
+    <list default="true" id="4655b10e-ee27-4a91-86a0-a796bb50287b" name="Changes" comment="remove rubymine config">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/rubyreads.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rubyreads.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,12 +43,12 @@
     &quot;assignee&quot;: &quot;vipermark7&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/vipermark7/rubyreads&quot;,
-    &quot;accountId&quot;: &quot;a87e6b96-2faa-43c8-9ca0-6e8e0c045ece&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/vipermark7/rubyreads",
+    "accountId": "53b2cc51-052c-4003-b5c1-91436e7756d2"
   }
-}</component>
+}]]></component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -75,7 +80,7 @@
     "Test::Unit/Shoulda/Minitest.BooksControllerTest.executor": "Run",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "/home/spacey/rubyreads",
+    "last_opened_file_path": "/home/spacey/.asdf/installs/ruby/3.3.4/bin/ruby",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -391,7 +396,7 @@
       <workItem from="1718316635861" duration="622000" />
       <workItem from="1718689785812" duration="452000" />
       <workItem from="1718746854559" duration="3584000" />
-      <workItem from="1721868174015" duration="340000" />
+      <workItem from="1721868174015" duration="5370000" />
     </task>
     <task id="LOCAL-00001" summary="added migration for comments table">
       <option name="closed" value="true" />
@@ -489,7 +494,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721868513943</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="remove rubymine config">
+      <option name="closed" value="true" />
+      <created>1721868682935</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1721868682935</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -508,12 +521,13 @@
     <MESSAGE value="completed basic devise setup" />
     <MESSAGE value="fixed an error where deleting book wouldn't delete reviews" />
     <MESSAGE value="remove old patch file" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove old patch file" />
+    <MESSAGE value="remove rubymine config" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove rubymine config" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/rubyreads@test__rubyreads.rcov" NAME="test: rubyreads Coverage Results" MODIFIED="1717211599977" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="rubyreads" />
     <SUITE FILE_PATH="coverage/rubyreads@spec__rubyreads.rcov" NAME="spec: rubyreads Coverage Results" MODIFIED="1717205692378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="rubyreads" />
     <SUITE FILE_PATH="coverage/rubyreads@BooksControllerTest.rcov" NAME="BooksControllerTest Coverage Results" MODIFIED="1717205381378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="rubyreads" />
-    <SUITE FILE_PATH="coverage/rubyreads@rubyreads.rcov" NAME="rubyreads Coverage Results" MODIFIED="1718977906651" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="rubyreads" />
-    <SUITE FILE_PATH="coverage/rubyreads@test__rubyreads.rcov" NAME="test: rubyreads Coverage Results" MODIFIED="1717211599977" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="rubyreads" />
+    <SUITE FILE_PATH="coverage/rubyreads@rubyreads.rcov" NAME="rubyreads Coverage Results" MODIFIED="1721871700209" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="rubyreads" />
   </component>
 </project>
