@@ -16,11 +16,7 @@
   <a href="#news">News</a>
   <a href="#contact">Contact</a>
   <a href="#about">About</a>
-  <%= if current_user != nil %>
-    <p> Not logged in </p>
-  <%= else %>
-    Logged in as: <%= current_user.email || "guest" %>
-  <%= end %>
+  <p> Logged in as: <%= current_user ? current_user.email : "guest"%> </p>
 </div>
 <%= yield %>
 </body>

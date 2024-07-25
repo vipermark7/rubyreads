@@ -9,13 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4655b10e-ee27-4a91-86a0-a796bb50287b" name="Changes" comment="remove rubymine config">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+    <list default="true" id="4655b10e-ee27-4a91-86a0-a796bb50287b" name="Changes" comment="upgrade ruby verison">
       <change beforePath="$PROJECT_DIR$/.idea/rubyreads.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rubyreads.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/development.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db/development.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -396,7 +397,7 @@
       <workItem from="1718316635861" duration="622000" />
       <workItem from="1718689785812" duration="452000" />
       <workItem from="1718746854559" duration="3584000" />
-      <workItem from="1721868174015" duration="5370000" />
+      <workItem from="1721868174015" duration="6096000" />
     </task>
     <task id="LOCAL-00001" summary="added migration for comments table">
       <option name="closed" value="true" />
@@ -502,7 +503,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721868682935</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="upgrade ruby verison">
+      <option name="closed" value="true" />
+      <created>1721874097655</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1721874097655</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -522,12 +531,13 @@
     <MESSAGE value="fixed an error where deleting book wouldn't delete reviews" />
     <MESSAGE value="remove old patch file" />
     <MESSAGE value="remove rubymine config" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove rubymine config" />
+    <MESSAGE value="upgrade ruby verison" />
+    <option name="LAST_COMMIT_MESSAGE" value="upgrade ruby verison" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/rubyreads@test__rubyreads.rcov" NAME="test: rubyreads Coverage Results" MODIFIED="1717211599977" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="rubyreads" />
     <SUITE FILE_PATH="coverage/rubyreads@spec__rubyreads.rcov" NAME="spec: rubyreads Coverage Results" MODIFIED="1717205692378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="rubyreads" />
     <SUITE FILE_PATH="coverage/rubyreads@BooksControllerTest.rcov" NAME="BooksControllerTest Coverage Results" MODIFIED="1717205381378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="rubyreads" />
-    <SUITE FILE_PATH="coverage/rubyreads@rubyreads.rcov" NAME="rubyreads Coverage Results" MODIFIED="1721871700209" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="rubyreads" />
+    <SUITE FILE_PATH="coverage/rubyreads@rubyreads.rcov" NAME="rubyreads Coverage Results" MODIFIED="1721874801825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="rubyreads" />
   </component>
 </project>
